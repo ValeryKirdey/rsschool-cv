@@ -1,0 +1,17 @@
+.code {
+    @include title-text;
+}
+
+pre {
+    margin: 0;
+}
+
+@media(max-width: $sm) {
+    pre {
+        @include flex-column;
+        justify-content: center;
+        .coder {
+            width: 70%;
+        }
+    }
+}

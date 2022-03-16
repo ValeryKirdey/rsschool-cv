@@ -1,0 +1,49 @@
+section.code 
+    //- h2(data-heading="Slide") Code Example
+    h2(id="code").animated
+        span C
+        span O
+        span D
+        span E
+        span &nbsp;&nbsp;
+        span E
+        span X
+        span A
+        span M
+        span P
+        span L
+        span E
+    pre
+        code.coder
+            //- != 'module.exports = function towelSort(matrix) { <br>'
+            //- !=    'if (matrix && matrix.length > 0) { <br>'
+            //- !=    'let newArray = []<br>'
+            //- !=    'for (let i = 0; i &lt;= matrix.length - 1; i++) {'<br>
+            //- !=        'if (i % 2 !== 0) {'<br>
+            //- !=            'matrix[i].reverse()'<br>
+            //- !=        '}'<br>
+            //- !=        'for (let j = 0; j &lt;= matrix[i].length - 1; j++) {'<br>
+            //- !=            'newArray.push(matrix[i][j])'<br>
+            //- !=            '}'<br>
+            //- !=       '}'<br>
+            //- !=        'return newArray'<br>
+            //- !=    '} else {'<br>
+            //- !=       'return [];'<br>
+            //- !=    '}'<br>
+            //- !=    '}'
+        | <span>module.exports</span> = function towelSort(matrix) {<br>
+        |    <span>if</span> (matrix && matrix.length > 0) {<br>
+        |       <span>let</span> newArray = []<br>
+        |       <span>for</span> (let i = 0; i &lt;= matrix.length - 1; i++) {<br>
+        |           <span>if</span> (i % 2 !== 0) {<br>
+        |               matrix[i].reverse()<br>
+        |           }<br>
+        |           <span>for</span> (let j = 0; j &lt;= matrix[i].length - 1; j++) {<br>
+        |               newArray.push(matrix[i][j])<br>
+        |            }<br>
+        |        }<br>
+        |        <span>return</span> newArray<br>
+        |    } <span>else</span> {<br>
+        |        <span>return</span> [];<br>
+        |    }<br>
+        | }<br>
