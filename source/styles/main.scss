@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import "./fonts.scss";
+@import "./constants.scss";
+@import "./mixin.scss";
+@import "./navbar.scss";
+@import "./burger.scss";
+@import "./avatar.scss";
+@import "./about.scss";
+@import "./education.scss";
+@import "./experience.scss";
+@import "./skills.scss";
+@import "./code.scss";
+@import "./projects.scss";
+@import "./hobbies.scss";
+@import "./contacts.scss";
+@import "./footer.scss";
+body {
+    // background: $background;
+    margin: 0px auto;
+    width: 100%;
+}
+
+section {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+}

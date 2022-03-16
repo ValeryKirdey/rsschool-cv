@@ -1,0 +1,1 @@
+var navbarBtn=document.querySelector("#burger"),navbarMenu=document.querySelector(".navbar-menu");function toggleMenu(){navbarMenu.classList.toggle("active")}function closeNav(){navbarMenu.classList.remove("active")}navbarMenu.addEventListener("click",closeNav),navbarBtn.addEventListener("click",toggleMenu);

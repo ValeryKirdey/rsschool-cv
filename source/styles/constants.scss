@@ -1,0 +1,62 @@
+$white: #fff;
+$black: #0E0E13;
+$gray: #404245;
+$blue: #00BBF9;
+$queenBlue: #3D6792;
+$gold: #FEE440;
+$bg:#ffd700;
+// #00BBF9
+// #0099B8
+$darkGold: #BA840E;
+$oldGold: #DDBD57;
+$bgBlackBtn: linear-gradient( to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.009) 11.7%, hsla(0, 0%, 0%, 0.034) 22.1%, hsla(0, 0%, 0%, 0.072) 31.2%, hsla(0, 0%, 0%, 0.123) 39.4%, hsla(0, 0%, 0%, 0.182) 46.6%, hsla(0, 0%, 0%, 0.249) 53.1%, hsla(0, 0%, 0%, 0.320) 58.9%, hsla(0, 0%, 0%, 0.394) 64.3%, hsla(0, 0%, 0%, 0.468) 69.3%, hsla(0, 0%, 0%, 0.540) 74.1%, hsla(0, 0%, 0%, 0.607) 78.8%, hsla(0, 0%, 0%, 0.668) 83.6%, hsla(0, 0%, 0%, 0.721) 88.7%, hsla(0, 0%, 0%, 0.762) 94.1%, hsla(0, 0%, 0%, 0.790) 100%);
+$background: #e0e0e0;
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+$primeryFontRegular: "Montserrat-Regular";
+$primeryFontBold: "Montserrat-Bold";
+$primeryFontExtraBold: "Montserrat-ExtraBold";
+$primeryFontItalic: "Montserrat-Italic";
+$primeryFontMedium: "Montserrat-Medium";
+// $linksProjects: 'https://github.com/ValeryKirdey/dz2_valery',
+// 'https://github.com/ValeryKirdey/JSFEPRESCHOOL2022/tree/js-30/js-30/eco-sounds',
+// 'https://github.com/ValeryKirdey/it-studio',
+// 'https://github.com/ValeryKirdey/graduate-work',
+// 'https://rolling-scopes-school.github.io/valerykirdey-JSFEPRESCHOOL/portfolio/',
+// 'https://github.com/ValeryKirdey/gulp-course-template/tree/feature/kirdey',
+// 'https://github.com/ValeryKirdey/dz1_valery',
+// 'https://github.com/ValeryKirdey/JSFEPRESCHOOL2022/tree/js-30/js-30/random-jokes',
+// 'https://github.com/ValeryKirdey/first_project';
+$imageIds: 'food',
+'eco-sounds',
+'it-company',
+'testing',
+'portfolio',
+'shoes-shop',
+'ice-cream',
+'rickandmorty',
+'first-project';
+$burger-height: 30px;
+$burger-width: 60px;
+$burger-item: 5px;
+$burger-item-offset: $burger-height - $burger-item * 2;
+$burger-item-shadow: -1 * $burger-item - ($burger-item-offset - $burger-item) / 2;
+$t: 1s;
+$d: 0.08em;
+$n: 3;
+$e: cubic-bezier(0.860,
+0.000,
+0.070,
+1.000);
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: "Montserrat-Bold", sans-serif;
+    --font-serif: "Montserrat-Italic", serif;
+}
+
+$sl: 400px;
+$sm: 540px;
+$md: 770px;
+$lg: 960px;
+$xl: 1140px;
+$xxl: 1340px;

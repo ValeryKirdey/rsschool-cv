@@ -1,0 +1,179 @@
+.projects {
+    @include title-text;
+}
+
+.page-content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 80px;
+    font-family: var(--font-sans);
+    // @media (min-width: $md) {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+    @media (min-width: $lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: $background;
+    background-color: $background;
+    box-shadow: 4.7px 3px 2.7px rgba(0, 0, 0, 0.076), 11.2px 7.3px 6.5px rgba(0, 0, 0, 0.098), 21.2px 13.8px 12.3px rgba(0, 0, 0, 0.11), 37.7px 24.6px 21.9px rgba(0, 0, 0, 0.12), 70.6px 46px 40.9px rgba(0, 0, 0, 0.129), 169px 110px 98px rgba(0, 0, 0, 0.14);
+    @media (min-width: $md) {
+        height: 350px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110%;
+        background-size: cover;
+        background-position: 0 0;
+        transition: transform calc(var(--d) * 1.5) var(--e);
+        pointer-events: none;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200%;
+        pointer-events: none;
+        background-image: $bgBlackBtn;
+        transform: translateY(-50%);
+        transition: transform calc(var(--d) * 2) var(--e);
+    }
+    @each $projects in $imageIds {
+        $i: index($imageIds, $projects);
+        &:nth-child(#{$i}):before {
+            background-image: url('../img/#{$projects}.png');
+        }
+    }
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+    >*+* {
+        margin-top: 1rem;
+    }
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: $queenBlue 1px 0 10px;
+}
+
+.copy {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $queenBlue;
+    border: none;
+    &:hover {
+        background-color: lighten($queenBlue, 5%);
+    }
+    &:focus {
+        outline: 1px dashed $gold;
+        outline-offset: 3px;
+    }
+    // &:nth-child(0) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(1) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(2) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(3) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(4) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(5) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(6) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+    // &:nth-child(7) {
+    //     content: url('https://github.com/ValeryKirdey/');
+    // }
+}
+
+@media (hover: hover) and (min-width: $md) {
+    .card:after {
+        transform: translateY(0);
+    }
+    .content {
+        transform: translateY(calc(100% - 4.5rem));
+        >*:not(.title) {
+            opacity: 0;
+            transform: translateY(1rem);
+            transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+        }
+    }
+    .card:hover,
+    .card:focus-within {
+        align-items: center;
+        &:before {
+            transform: translateY(-4%);
+        }
+        &:after {
+            transform: translateY(-50%);
+        }
+        .content {
+            transform: translateY(0);
+            >*:not(.title) {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: calc(var(--d) / 8);
+            }
+        }
+    }
+    .card:focus-within {
+        &:before,
+        &:after,
+        .content,
+        .content>*:not(.title) {
+            transition-duration: 0s;
+        }
+    }
+}

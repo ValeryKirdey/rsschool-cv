@@ -1,0 +1,10 @@
+.hobbies {
+    @include title-text;
+    &-info {
+        width: 70%;
+        line-height: 1.5;
+        font-size: 25px;
+        text-align: center;
+        font-family: $primeryFontMedium;
+    }
+}

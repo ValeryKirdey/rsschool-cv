@@ -1,0 +1,16 @@
+<section class="code"><h2 class="animated" id="code"><span>C</span><span>O</span><span>D</span><span>E</span><span>&nbsp;&nbsp;</span><span>E</span><span>X</span><span>A</span><span>M</span><span>P</span><span>L</span><span>E</span></h2><pre><code class="coder"></code><span>module.exports</span> = function towelSort(matrix) {<br>
+   <span>if</span> (matrix && matrix.length > 0) {<br>
+      <span>let</span> newArray = []<br>
+      <span>for</span> (let i = 0; i &lt;= matrix.length - 1; i++) {<br>
+          <span>if</span> (i % 2 !== 0) {<br>
+              matrix[i].reverse()<br>
+          }<br>
+          <span>for</span> (let j = 0; j &lt;= matrix[i].length - 1; j++) {<br>
+              newArray.push(matrix[i][j])<br>
+           }<br>
+       }<br>
+       <span>return</span> newArray<br>
+   } <span>else</span> {<br>
+       <span>return</span> [];<br>
+   }<br>
+}<br></pre></section>
