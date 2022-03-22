@@ -27,7 +27,8 @@ My name is Valery. I am 26 years old and I am from Minsk, the capital of the Rep
 
 ## 📟 CODE EXAMPLE:
 
-```const runLengthEncoding = (str) => {
+```
+var runLengthEncoding = function(str){
     const arr = [];
     let value = 1;
     for (let i=0; i<str.length; i++){
