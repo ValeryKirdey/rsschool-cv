@@ -19,13 +19,13 @@
 * [JavaScript For Cats](http://jsforcats.com/)
 * [CodeAcademy](https://www.codecademy.com/learn)
 * [NodeSchool](https://nodeschool.io/ru/#workshoppers)
-* [Hexlet](https://ru.hexlet.io/)
+* [Hexlet JS/HTML/CSS/Git courses](https://ru.hexlet.io/)
 
 
 ## 🧝‍♂️ BRIEFLY ABOUT MYSELF:
 My name is Valery. I am 26 years old and I am from Minsk, the capital of the Republic of Belarus. I started learning programming a couple of months ago with no experience in this, but there is a great desire to learn how to write good code. My goal is to master front-end development and become a sought-after IT specialist. I approach my work and tasks responsibly and always listen to the opinions and criticisms of my colleagues. I am constantly developing in a professional direction and do not stop there.
 
-## 📟 CODE EXAMPLE:
+## 🖥 CODE EXAMPLE:
 
 ```
 var runLengthEncoding = function(str){
@@ -48,6 +48,15 @@ var runLengthEncoding = function(str){
 2. 📗 Belarusian - Native
 3. 📘 Russian - Native 
 
+
+## 📂 MY PROJECTS:
+* [Eco-sounds](https://rolling-scopes-school.github.io/valerykirdey-JSFEPRESCHOOL/js-30/eco-sounds/)
+* [Random-jokes](https://rolling-scopes-school.github.io/valerykirdey-JSFEPRESCHOOL/js-30/random-jokes/)
+* [Random-game](https://rolling-scopes-school.github.io/valerykirdey-JSFEPRESCHOOL/js-30/random-game/)
+* [Portfolio](https://rolling-scopes-school.github.io/valerykirdey-JSFEPRESCHOOL/portfolio/)
+* [IT-studio](https://github.com/ValeryKirdey/it-studio)
+* [Testing](https://github.com/ValeryKirdey/graduate-work)
+* [Shoes shop](https://github.com/ValeryKirdey/gulp-course-template/tree/feature/kirdey)
 
 ## 🧳 SKILLS:
 * HTML
