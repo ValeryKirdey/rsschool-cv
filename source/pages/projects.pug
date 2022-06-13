@@ -1,0 +1,23 @@
+section(id="projects").projects
+  - let cards = [{ title: 'Food Menu', copy: 'Making time a good time by making food the good food.', button: 'Project Link' }, { title: 'Eco-Sounds', copy: 'Feel sounds of neture in your home', button: 'Project Link' }, { title: 'IT Studio', copy: 'We create easy solutions to complex tasks and problems', button: 'Project Link' }, { title: 'Testing', copy: 'Lightning fast prototyping. Most calendars are designed for teams', button: 'Project Link' }, { title: 'Portfolio', copy: 'Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise', button: 'Project Link' }, { title: 'Shoes Shop', copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.', button: 'Project Link' }, { title: 'Ice-Cream', copy: 'Feel cold inside your body', button: 'Project Link' }, { title: 'Randome Joke', copy: 'WeeBulLubbBaaaaDuuuu', button: 'Project Link' }, { title: 'First Project', copy: 'My first web page what I create myself', button: 'Project Link'}]
+  //- - let url = [{'https://github.com/ValeryKirdey/dz2_valery'}, {'https://github.com/ValeryKirdey/JSFEPRESCHOOL2022/tree/js-30/js-30/eco-sounds'}, {'https://github.com/ValeryKirdey/it-studio'}, {'https://github.com/ValeryKirdey/graduate-work'} {'https://rolling-scopes-school.github.io/valerykirdey-JSFEPRESCHOOL/portfolio/'}, {'https://github.com/ValeryKirdey/gulp-course-template/tree/feature/kirdey'}, {'https://github.com/ValeryKirdey/dz1_valery'}, {'https://github.com/ValeryKirdey/JSFEPRESCHOOL2022/tree/js-30/js-30/random-jokes'}, {'https://github.com/ValeryKirdey/first_project'}]
+  h2.animated
+    span P
+    span R
+    span O
+    span J
+    span E
+    span C
+    span T
+    span S
+
+  mixin card(title, copy, button)
+    .card
+      .content
+        h2.title= title
+        p.copy= copy
+        a(href="https://github.com/ValeryKirdey/" target="_blanck").link
+          button.btn= button
+  main.page-content
+    each card in cards
+      +card(card.title, card.copy, card.button)

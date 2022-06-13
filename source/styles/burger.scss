@@ -1,0 +1,82 @@
+.humburger {
+    @media(max-width: $md) {
+        display: none;
+        position: absolute;
+        right: 35px;
+        top: 35px;
+        z-index: 101;
+        @include flex-column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media(min-width: $md) {
+        display: none;
+    }
+}
+
+.navbar-menu {
+    @media(max-width: $md) {
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: $gray;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s ease;
+        &.active {
+            top: 0;
+            visibility: visible;
+            opacity: 1;
+            margin: 0;
+        }
+        &__list {
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            li {
+                padding: 25px 50px;
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+#burger {
+    display: none;
+    &:checked+[for="burger"]:before {
+        transform: translateY($burger-height / 2 - $burger-item * 0.5) rotateZ(45deg);
+    }
+    &:checked+[for="burger"]:after {
+        filter: initial;
+        transform: translateY($burger-height / 2 - $burger-item * 1.5) rotateZ(-45deg);
+    }
+}
+
+[for="burger"] {
+    border-radius: $burger-item / 2;
+    color: $blue;
+    cursor: pointer;
+    height: $burger-height;
+    user-select: none;
+    width: $burger-width;
+    &:before,
+    &:after {
+        border-radius: inherit;
+        background: currentColor;
+        content: "";
+        display: block;
+        height: $burger-item;
+        transition: 0.5s;
+    }
+    &:after {
+        filter: drop-shadow(0 $burger-item-shadow currentColor);
+        transform: translateY($burger-item-offset);
+    }
+}
